@@ -1,0 +1,28 @@
+.header {
+  margin-bottom: 30px;
+
+  // Avoid changing the placeholder to uppercase
+  ::-webkit-input-placeholder {
+    text-transform: initial;
+  }
+
+  :-moz-placeholder { 
+    text-transform: initial;
+  }
+
+  ::-moz-placeholder {  
+    text-transform: initial;
+  }
+
+  :-ms-input-placeholder { 
+    text-transform: initial;
+  }
+
+  input {
+    text-transform: uppercase;
+  }
+
+  form {
+    display: flex;
+  }
+}

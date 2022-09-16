@@ -1,0 +1,66 @@
+.country {
+  width: 250px;
+  margin: auto;
+  overflow: hidden;
+
+  &__wrapper {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  &__flag {
+    font-size: 200px;
+    height: 220px;
+    margin-top: -50px;
+    text-align: center;
+    background-color: white;
+  
+    // To avoid selecting it with the mouse pointer.
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                          supported by Chrome, Edge, Opera and Firefox */
+  }
+
+  &__details-title {
+    font-size: 14px;
+  }
+
+  &__details-content {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  &__currencies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  &__list {
+    padding-left: 0px;
+    margin-bottom: 0;
+    list-style: none;
+
+    li {
+      margin-top: 10px;
+
+      span {
+        display: block;
+        font-size: 11px;
+      }
+    }
+  }
+
+  .card-title {
+    font-weight: bold;
+  }
+
+  .card-subtitle {
+    font-size: 16px;
+  }
+}

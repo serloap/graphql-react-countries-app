@@ -1,0 +1,17 @@
+.countries {
+  &__country {
+    height: 50px;
+    max-height: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid lightgray;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+
+    span {
+      margin-right: 5px;
+    }
+  }
+}
