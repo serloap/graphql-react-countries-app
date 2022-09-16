@@ -6,7 +6,7 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import App from "./App";
 
 const rootElement = document.getElementById("root");
-const root = ReactDOMClient.createRoot(rootElement);
+const root = ReactDOMClient.createRoot(rootElement || document.createElement('div'));
 
 const client = new ApolloClient({
   uri: "https://countries.trevorblades.com/",

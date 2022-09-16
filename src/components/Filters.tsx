@@ -19,7 +19,7 @@ const Filters: React.FC<{
 
   const allCurrencies = useMemo(
     () => getCurrencies(data?.countries),
-    [data?.countries] // eslint-disable-line react-hooks/exhaustive-deps
+    [data?.countries] // eslint-disable-line
   );
 
   const handleContinentsChange = (

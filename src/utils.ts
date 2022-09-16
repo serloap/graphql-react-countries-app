@@ -26,7 +26,7 @@ export const getMappedFilters = (
 
 
 export const tickets = (queue: number[], ticketPrice = 25, bills = [ticketPrice, 50, 100]) => {
-  console.log('Tickets queue: ', queue); // eslint-disable-line no-console.
+  console.log('Tickets queue: ', queue); // eslint-disable-line no-console
 
   const availableBills: { [key: number]: number } = Object.assign({}, ...bills.map((key) => ({ [key]: 0 })));
 
@@ -40,7 +40,7 @@ export const tickets = (queue: number[], ticketPrice = 25, bills = [ticketPrice,
     }
 
     if (queue[i] < ticketPrice) {
-      console.log('Final Bills Quantity: ', availableBills); // eslint-disable-line no-console.
+      console.log('Final Bills Quantity: ', availableBills); // eslint-disable-line no-console
       
       return 'NO'; // Doesn't have enough money.
     }
@@ -65,14 +65,14 @@ export const tickets = (queue: number[], ticketPrice = 25, bills = [ticketPrice,
       if (remaingChange === 0) {
         availableBills[queue[i]] += 1; // Could give change, save the received bill.
       } else {
-        console.log('Final Bills Quantity: ', availableBills); // eslint-disable-line no-console.
+        console.log('Final Bills Quantity: ', availableBills); // eslint-disable-line no-console
 
         return 'NO';
       }
     }
   }
 
-  console.log('Final Bills Quantity: ', availableBills); // eslint-disable-line no-console.
+  console.log('Final Bills Quantity: ', availableBills); // eslint-disable-line no-console
   
   return 'YES';
 } 
